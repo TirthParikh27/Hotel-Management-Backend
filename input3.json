@@ -1,0 +1,12 @@
+{ "command": "room", "venue": "K17", "room": "lab1", "size": "small" }
+{ "command": "room", "venue": "K17", "room": "lab2", "size": "small" }
+{ "command": "request", "id": "COMP2511 lecture", "start": "2019-03-28", "end": "2019-03-29", "small": 2, "medium": 0, "large": 0 }
+{ "command": "change", "id": "COMP2511 lecture", "start": "2019-03-25", "end": "2019-03-26", "small": 1, "medium": 0, "large": 0 }
+{ "command": "request", "id": "COMP2511 tut", "start": "2019-03-25", "end": "2019-03-26", "small": 2, "medium": 0, "large": 0 }
+{ "command": "cancel", "id": "COMP2511 lecture" }
+{ "command": "list", "venue": "K17" }
+{ "command": "request", "id": "COMP2511 lecture", "start": "2019-03-28", "end": "2019-03-29", "small": 1, "medium": 0, "large": 0 }
+{ "command": "request", "id": "COMP2511 lab", "start": "2019-03-28", "end": "2019-03-29", "small": 1, "medium": 0, "large": 0 }
+{ "command": "list", "venue": "K17" }
+
+

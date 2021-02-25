@@ -1,0 +1,20 @@
+{ "command": "room", "venue": "K17", "room": "lab1", "size": "small" }
+{ "command": "room", "venue": "K17", "room": "lab2", "size": "small" }
+{ "command": "room", "venue": "J17", "room": "Lec1", "size": "large" }
+{ "command": "room", "venue": "J17", "room": "Lec2", "size": "medium" }
+{ "command": "request", "id": "COMP2511 lecture", "start": "2019-03-25", "end": "2019-03-26", "small": 0, "medium": 2, "large": 1 }
+{ "command": "request", "id": "COMP2511 lecture", "start": "2019-03-25", "end": "2019-03-26", "small": 1, "medium": 1, "large": 0 }
+{ "command": "request", "id": "COMP2511 lab", "start": "2019-03-26", "end": "2019-03-26", "small": 1, "medium": 0, "large": 1 }
+{ "command": "request", "id": "COMP2511 lab", "start": "2019-03-26", "end": "2019-03-26", "small": 1, "medium": 1, "large": 0 }
+{ "command": "request", "id": "COMP2511 lab", "start": "2019-03-28", "end": "2019-03-29" , "small": 0, "medium": 1, "large": 1 }
+{ "command": "request", "id": "COMP2511 tut", "start": "2019-03-25", "end": "2019-03-26", "small": 0, "medium": 1, "large": 1 }
+{ "command": "cancel", "id": "COMP2511 lab" }
+{ "command": "request", "id": "COMP2511 lecture", "start": "2019-03-28", "end": "2019-03-29", "small": 0, "medium": 1, "large": 1 }
+{ "command": "request", "id": "COMP2511 help session", "start": "2019-03-25", "end": "2019-03-26", "small": 2, "medium": 0, "large": 0 }
+{ "command": "list", "venue": "K17" }
+{ "command": "list", "venue": "J17" }
+{ "command": "cancel", "id": "COMP2511 tut" }
+{ "command": "cancel", "id": "COMP2511 help session" }
+{ "command": "cancel", "id": "COMP2511 lecture" }
+{ "command": "list", "venue": "K17" }
+{ "command": "list", "venue": "J17" }

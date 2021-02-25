@@ -1,0 +1,106 @@
+{"status": "rejected"}
+{"status": "rejected"}
+{"status": "rejected"}
+{"status": "rejected"}
+{
+  "venue": "J17",
+  "rooms": [
+    "Lec1",
+    "Lec2"
+  ],
+  "status": "success"
+}
+{
+  "venue": "J17",
+  "rooms": [
+    "Lec1",
+    "Lec2"
+  ],
+  "status": "success"
+}
+{
+  "venue": "J17",
+  "rooms": [
+    "Lec1",
+    "Lec2"
+  ],
+  "status": "success"
+}
+{
+  "venue": "K17",
+  "rooms": [
+    "lab1",
+    "lab2"
+  ],
+  "status": "success"
+}
+[
+  {
+    "reservations": [{
+      "start": "2019-03-25",
+      "end": "2019-03-26",
+      "id": "COMP2511 help session"
+    }],
+    "room": "lab1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-25",
+      "end": "2019-03-26",
+      "id": "COMP2511 help session"
+    }],
+    "room": "lab2"
+  }
+]
+[
+  {
+    "reservations": [
+      {
+        "start": "2019-03-25",
+        "end": "2019-03-26",
+        "id": "COMP2511 tut"
+      },
+      {
+        "start": "2019-03-28",
+        "end": "2019-03-29",
+        "id": "COMP2511 lecture"
+      }
+    ],
+    "room": "Lec1"
+  },
+  {
+    "reservations": [
+      {
+        "start": "2019-03-25",
+        "end": "2019-03-26",
+        "id": "COMP2511 tut"
+      },
+      {
+        "start": "2019-03-28",
+        "end": "2019-03-29",
+        "id": "COMP2511 lecture"
+      }
+    ],
+    "room": "Lec2"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "lab1"
+  },
+  {
+    "reservations": [],
+    "room": "lab2"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "Lec1"
+  },
+  {
+    "reservations": [],
+    "room": "Lec2"
+  }
+]

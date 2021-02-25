@@ -1,0 +1,72 @@
+{
+  "venue": "J17",
+  "rooms": [
+    "Lec1",
+    "Lec2"
+  ],
+  "status": "success"
+}
+{
+  "venue": "K17",
+  "rooms": ["lab2"],
+  "status": "success"
+}
+{
+  "venue": "K17",
+  "rooms": ["lab1"],
+  "status": "success"
+}
+{"status": "rejected"}
+{
+  "venue": "K17",
+  "rooms": [
+    "lab1",
+    "lab2"
+  ],
+  "status": "success"
+}
+{"status": "rejected"}
+{
+  "venue": "J17",
+  "rooms": [
+    "Lec1",
+    "Lec2"
+  ],
+  "status": "success"
+}
+[
+  {
+    "reservations": [{
+      "start": "2019-03-28",
+      "end": "2019-03-29",
+      "id": "COMP2511 lab"
+    }],
+    "room": "lab1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-28",
+      "end": "2019-03-29",
+      "id": "COMP2511 lab"
+    }],
+    "room": "lab2"
+  }
+]
+[
+  {
+    "reservations": [{
+      "start": "2019-03-25",
+      "end": "2019-03-26",
+      "id": "COMP2511 tut"
+    }],
+    "room": "Lec1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-25",
+      "end": "2019-03-26",
+      "id": "COMP2511 tut"
+    }],
+    "room": "Lec2"
+  }
+]
