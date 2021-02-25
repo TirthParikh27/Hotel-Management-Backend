@@ -1,8 +1,4 @@
-# Assignment 1 - Venue Hire System
-
-## Due: Week 4, Sunday, 5 PM (28th June)
-
-## Value: 15 marks
+## Venue Hire System
 
 ## Aims
 
@@ -137,87 +133,6 @@ Note that all commands produce a JSON object as output, except for `list` that p
 
 For commands that do not always succeed, the `status` field indicates whether the result was successful. If a reservation request or change cannot be fulfilled, the status should be `rejected`. In the case of such a rejection, no reservations should be added, changed or deleted. You can assume `change` and `cancel` have identifiers for existing reservations, `list` has a valid venue, and `room` is not used to add a room that has already been added.
 
-## Important Warning
-
-* Be careful to follow the specification on ordering. If you output the incorrect order you are likely to lose many marks for correctness.
-	* If there are modifications made to the assignment specification to clarify ambiguities, these will be announced via webcms3, and you will be expected to incorporate them into your program (even after commencement of the assignment).
-
-* **No human marking will be applied in place of the automarked correctness marks under any circumstances - thus it is your responsibility to ensure your program satisfies the requirements 100%. We will not accept arguments similar to "my output is almost the same as the required output so I should get some marks".**
-
-## Hints
-
-* Focus on the requirements as given. A solution that tries to satisfy requirements that weren't given is not necessarily a better solution.
-
-* The only data structures you will need are lists. Structures like HashMaps are neither necessary nor improve your solution. They may reduce the quality of your solution if you are not careful by mixing up the required output order.
-
-* The JSON-Java library is intended for serialisation, not as an alternative to Java collections.
-
-* Notice that, per the requirements, rooms are allocated from a single venue in a request/change.
-
-* Ensure you implement correct roll-back functionality in case a change fails/you otherwise implement some mechanism to ensure failed changes don't change the system state.
-
-* A **successful** change matches the effect of cancelling a request and making a new request with the new requirements. Thus, ensure that overlap between the reservation being changed and the appropriate replacement reservation wont prevent approval of the change.
-
-* For command output, ordering of **fields and indentation** are allowed to differ in your submission. This is likely to occur because JSONObjects may not preserve all parts of the original order.
-
-* Rooms will not be created twice.
-
-* You may wish to consider using ArrayLists.
-
-* A request for a single room can only reserve 1 room (not mix and match rooms on different dates).
-
-* Assume all room/venues are case-sensitive.
-
-## Submission
-
-You should ensure the following are in your GitLab repository:
-
-* All your .java source files
-* A .pdf file containing your design documents (a UML class diagram and, optionally, other diagrams necessary to understand your design)
-* A series of .json files (at least three) that you have used as input files to test your system, and the corresponding .json output files (call these input1.json, output1.json, input2.json, output2.json, etc.)
-
-Submit the contents of your repository with:
-
-```bash
-2511 submit ass1
-```
-
-The last submission as of the date of assessment will be marked. You may submit as many times as you wish.
-
-**IMPORTANT**
-
-* The above command **MUST** be run from a CSE machine remotely or in-lab
-* The above command submits the contents of your Gitlab repository. You must also read the submit command output, and input the required responses.
-
-A simple check will be done to ensure your code compiles and works correctly with the sample input. If your solution does not work for the sample input you can still submit, but you should not expect high marks.
-
-Any commits in your repository that were made after a submission will not be considered when marking.
-
-The JSON test files must not be the same as the tests already provided - to receive marks you must develop new tests from the specification. This will be automatically checked during marking.
-
-Your submission correctness automarking will use Java 11, as installed on CSE machines.
-
-You should leave the directory structure and package labels as originally labelled in the starter code - the automarking expects that structure.
-
-**Under no circumstances will any modifications be made by your tutor to your code to fix it during marking (even if the problem is small and loss of marks is severe). You are responsible for ensuring it is properly tested and passes the dryrun. You should plan for the possibility that you will need to spend additional time to solve configuration issues - particularly by having it ready by your week 4 tutorial, in case you need to seek help from a tutor.**
-
-**You should also take into account that last-minute-submissions may encounter glitches or slower submission due to many students attempting to submit at once. You should submit early to avoid this. Failure to submit in time due to a technical glitch from submitting just before the deadline will result in you receiving a late penalty.**
-
-**The dryrun intentionally does not test every requirement of the specification. You should develop additional tests from the spec to check the correctness of your submission. No more tests will be provided by the course staff.**
-
-## Assessment
-
-Marks for this assignment are allocated as follows:
-
-* Correctness (automarked): 8 marks
-	* Automarking: 4/8 marks
-	* Interactive session: 4/8 marks
-* Design: 6 marks
-	* Marking of submission by tutor: 3/6 marks
-	* Interactive session: 3/6 marks
-* Style: 1 mark
-
-**Late penalty: 2 marks per day or part-day late off the maximum mark obtainable for up to 3 (calendar) days after the due date (after which your mark will be reduced to 0)**
 
 ## Assessment Criteria
 
@@ -225,22 +140,4 @@ Marks for this assignment are allocated as follows:
 * Design: Adherence to object-oriented design principles, clarity of UML diagrams and conformance of UML diagrams to code, JSON test files, and proper justifications during interactive assessment in week-05 lab
 * Programming style: Adherence to standard Java programming style, understandable class and variable names, adequate Javadoc and comments
 
-## Interactive Sessions
 
-In your week 5 tut-lab session, you will be allocated a session to discuss your submission with your tutor or lab assistant. You will be required to answer questions within a given time limit. You will be marked on the quality of your responses.
-
-These sessions will be recorded for future reference.
-
-Failure to attend your allocated time without special consideration will result in a 0 mark for the assignment.
-
-If you are late to the interactive session, you will not be given extra time unless special consideration is approved, and instead lose marks for failing to answer the required questions.
-
-Interactive sessions determine 7 marks - 4 marks for correctness, 3 marks for design. You are likely to be asked both conceptual and syntax/semantics/structure questions.
-
-## Plagiarism
-
-Remember that **ALL** work submitted for this assignment must be your own work and no code sharing or copying is allowed. You may use code from textbooks or the Internet only with suitable attribution of the source in your program. You should carefully read the UNSW policy on academic integrity and plagiarism, noting, in particular, that collusion (working together on an assignment, or sharing parts of assignment solutions) is a form of plagiarism.
-
-Your submission will have plagiarism checking tools applied against it - including correlation-checking tools comparing your submission to other submissions by students, and also comparing to online sources of code/diagrams. Evidence of plagiarism will result in you receiving a plagiarism penalty and placement on the UNSW plagiarism register, and potentially further penalties, per the UNSW Plagiarism Procedure:
-
-https://www.gs.unsw.edu.au/policy/documents/plagiarismprocedure.pdf
